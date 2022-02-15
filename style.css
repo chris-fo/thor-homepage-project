@@ -1,0 +1,217 @@
+/* ------------------------------------- */
+/*             Colors                    */
+/* ------------------------------------- */
+
+:root {
+  --clr-bgr-dark: #1F2937;
+  --clr-bgr-accent: #3882F6;
+  --clr-bgr-secondary: #E5E7EB;
+  --clr-text-primary: #F9FAF8;
+  --clr-text-secondary: #E5E7EB;
+  --clr-text-tertiary: #1F2937;
+}
+
+/* ------------------------------------- */
+/*             General                   */
+/* ------------------------------------- */
+
+body {
+  font-family: Roboto;
+  margin: 0;
+}
+
+/* ------------------------------------- */
+/*         Utility Classes               */
+/* ------------------------------------- */
+
+.dark-bg {
+  background-color: var(--clr-bgr-dark);
+  color: var(--clr-text-primary);
+}
+
+/* ------------------------------------- */
+/*             Header styles             */
+/* ------------------------------------- */
+header {
+  padding-inline: 15%;
+}
+
+.navigation-bar {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px 0;
+}
+
+.header-logo {
+  font-size: 24px;
+}
+
+.header-links {
+  display: flex;
+  gap: 16px;
+  color: var(--clr-text-secondary);
+  font-size: 18px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul a {
+  text-decoration: none;
+  color: var(--clr-text-secondary);
+}
+
+.header-content {
+  display: flex;
+  flex: 1;
+  margin-top: 100px;
+  gap: 18px;
+  padding-bottom: 116px;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  font-weight: extra-bold;
+  margin: 0;
+}
+
+.header-text p {
+  margin-top: 0;
+  color: var(--clr-text-secondary);
+}
+
+.header-text input {
+  background-color: var(--clr-bgr-accent);
+  color: var(--clr-text-primary);
+  border-radius: 5px;
+  border: none;
+  padding: 8px 32px;
+}
+
+.header-image {
+  height: 100%;
+  max-width: 150px;
+  margin-inline: 100px;
+}
+
+.header-image-container {
+  flex: 1;
+  text-align: center;
+  background-color: var(--clr-bgr-secondary);
+}
+
+/* ------------------------------------- */
+/*           Info section styles         */
+/* ------------------------------------- */
+
+.info-section {
+  text-align: center;
+  padding-inline: 15%;
+  margin-bottom: 100px;
+}
+
+.info-section h2 {
+  margin: 36px;
+  color: var(--clr-text-tertiary);
+}
+
+.illustration-wrapper {
+  width: 150px;
+  height: 150px;
+  border: 3px var(--clr-bgr-accent) solid;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.card {
+  width: 150px;
+  text-align: center;
+}
+
+/* ------------------------------------- */
+/*          Quote section styles         */
+/* ------------------------------------- */
+
+.quote-section {
+  /* padding-inline: 15%; */
+  padding: 100px 15% 80px;
+  background-color: var(--clr-bgr-secondary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.quote {
+  color: var(--clr-text-tertiary);
+  font-size: 36px;
+  font-style: italic;
+  font-weight: light;
+}
+
+.quote-author {
+  font-weight: bold;
+  align-self: flex-end;
+}
+
+/* ------------------------------------- */
+/*           CTA section styles          */
+/* ------------------------------------- */
+
+.cta-section {
+  padding: 100px 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cta-container {
+  background-color: var(--clr-bgr-accent);
+  display: flex;
+  flex: 1;
+  padding: 30px 100px;
+  color: var(--clr-text-primary);
+  border-radius: 5px;
+  gap: 50px;
+}
+
+.cta-text h3,
+.cta-text p {
+  margin: 0;
+  font-size: smaller;
+}
+
+.cta-text {
+  flex: 3;
+}
+
+.cta-input {
+  flex: 1;
+  border: 2px var(--clr-text-primary) solid;
+  border-radius: 5px;
+  background-color: var(--clr-bgr-accent);
+  color: var(--clr-text-primary);
+}
+
+/* ------------------------------------- */
+/*           CTA section styles          */
+/* ------------------------------------- */
+
+footer {
+  padding: 30px 0;
+  background-color: var(--clr-bgr-dark);
+  color: var(--clr-text-secondary);
+  text-align: center;
+}
